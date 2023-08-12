@@ -1,3 +1,8 @@
+#Esercizio 1: Creare una classe Automobile che abbia gli attributi
+#"marco", "modello" e "anno". Aggiungi un metodo "descrivi che stampi una descrizione dell'automobile,
+#ad esempio "Questa è una Toyota
+#Corolla del 2017
+
 '''
 class automobile():
     def __init__(self, marca, modello, anno):
@@ -16,6 +21,11 @@ automobile1.descrivi()
 automobile2.descrivi()
 automobile3.descrivi()
 '''
+#Esercizio 2: Creare una classe Impiegato che abbia gli attributi "nome*
+#"cognome", "matricola" e "stipendio". Aggiungere un metodo
+#"aumenta _stipendio chi, aumenti lo stipendio dell'impiegato del 10% e un metodo "stampa _dettagli che stampi tutti i dettagli dell'impiegato, ad esempio "Impiegato: Marco Rossi, matricola 12345, stipendio: 3000
+#Euro'.
+
 '''
 class impiegato():
     def __init__(self, nome, cognome, matricola, stipendio):
@@ -36,35 +46,5 @@ impiegato.aumenta_stipendio()
 impiegato.stampa_dettaglio()
 '''
 
-# ereditarietà es
 
 
-class veicolo ():
-    def __init__ (self, marca, modello, anno):
-        self.marca = marca
-        self.modello = modello
-        self.anno = anno
-    
-    def accelera(self):
-        print("sto accelerando")
-    
-    def ferma (self):
-        print("sto frenando")
-    
-    def __str__(self):
-        return f"Marca: {self.marca}, modello: {self.modello}, anno: {self.anno}"
-
-
-class automobile(veicolo):
-    def __init__(self, marca, modello, anno, colore):
-        super().__init__(marca, modello, anno)
-        self.colore = colore
-    def cambia_colore(self, nuovo_colore):
-        self.colore = nuovo_colore
-    def __str__(self):
-        return super().__str__() + f", colore: {self.colore}"
-
-
-automobile = automobile ("Ferarri, Enzo, 2004 ")
-
-automobile.cambia_colore()
