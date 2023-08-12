@@ -1,3 +1,4 @@
+#  esercizio 13 di leet-code trasformare un qualsiasi numero romano in entrata, in numero intero:
 def intero(s):
     roman_to_int = {
         "I" : 1,
